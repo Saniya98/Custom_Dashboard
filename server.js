@@ -1,6 +1,6 @@
 const express=require('express');
 const path= require('path');
-const port=3000;
+// const port=3000;
 const app=express();
 
 app.use("/static", express.static(path.resolve(__dirname, "frontend", "static")));
@@ -9,5 +9,5 @@ app.get('/*',(req,res)=>{
 })
 
 
-app.listen(port, ()=>{
+app.listen(3000, ()=>{
     console.log("Server running...")})
